@@ -19,6 +19,6 @@ Java面试一站到底下册源代码
 
 ### Master分支
 
-### 第9章 Spring 分支
+### 第9章 分支名：java-interview-guide-part2
 本章主要讲解Spring IoC的设计理念，IoC实现原理，Spring AOP的设计理念，AOP的实现原理等内容。
 在此基础上讲解Spring相关的常见面试题及答题技巧
