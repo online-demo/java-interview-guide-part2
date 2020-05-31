@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="car" class="com.example.java.interview.guide.part2.car.spring.ioc.Car">
+        <property name="bodywork" ref="bodyWork"/>
+    </bean>
+
+    <bean id="bodyWork" class="com.example.java.interview.guide.part2.car.spring.ioc.Bodywork">
+        <property name="chassis" ref="chassis"/>
+    </bean>
+
+    <bean id="chassis" class="com.example.java.interview.guide.part2.car.spring.ioc.Chassis">
+        <property name="wheels">
+            <list>
+                <ref bean="wheel1"/>
+                <ref bean="wheel2"/>
+                <ref bean="wheel3"/>
+                <ref bean="wheel4"/>
+            </list>
+        </property>
+    </bean>
+
+<!--    <bean id="wheel1" class="com.example.java.interview.guide.part2.car.spring.ioc.Wheel">-->
+<!--        <constructor-arg value="50"/>-->
+<!--    </bean>-->
+
+<!--    <bean id="wheel2" class="com.example.java.interview.guide.part2.car.spring.ioc.Wheel">-->
+<!--        <constructor-arg value="50"/>-->
+<!--    </bean>-->
+
+<!--    <bean id="wheel3" class="com.example.java.interview.guide.part2.car.spring.ioc.Wheel">-->
+<!--        <constructor-arg value="50"/>-->
+<!--    </bean>-->
+
+<!--    <bean id="wheel4" class="com.example.java.interview.guide.part2.car.spring.ioc.Wheel">-->
+<!--        <constructor-arg value="50"/>-->
+<!--    </bean>-->
+
+    <bean id="wheel1" class="com.example.java.interview.guide.part2.car.spring.ioc.Wheel">
+        <constructor-arg value="45"/>
+    </bean>
+
+    <bean id="wheel2" class="com.example.java.interview.guide.part2.car.spring.ioc.Wheel">
+        <constructor-arg value="45"/>
+    </bean>
+
+    <bean id="wheel3" class="com.example.java.interview.guide.part2.car.spring.ioc.Wheel">
+        <constructor-arg value="55"/>
+    </bean>
+
+    <bean id="wheel4" class="com.example.java.interview.guide.part2.car.spring.ioc.Wheel">
+        <constructor-arg value="55"/>
+    </bean>
+</beans>
