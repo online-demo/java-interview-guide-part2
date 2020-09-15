@@ -23,4 +23,4 @@ Java面试一站到底下册源代码
 本章主要讲解Spring IoC的设计理念，IoC实现原理，Spring AOP的设计理念，AOP的实现原理等内容。
 在此基础上讲解Spring相关的常见面试题及答题技巧
 
-1. 本章第5小结BeanFactory完成类图：src/main/resources/images/BeanFactory类图.png
+1. 本章第5小结BeanFactory完整类图：src/main/resources/images/BeanFactory类图.png
